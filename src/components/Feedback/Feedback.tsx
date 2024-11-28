@@ -9,7 +9,10 @@ const Feedback = ({
     type: string;
 }) => {
     return (
-        <Alert severity={type === 'loading' ? 'info' : 'error'}>
+        <Alert
+            className="Feedback"
+            severity={type === 'loading' ? 'info' : 'error'}
+        >
             {children}
         </Alert>
     );
