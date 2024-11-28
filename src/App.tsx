@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import getPetType from './utils/getPetType';
 import useFetchOwners from './hooks/useFetchOwners';
-import { Pet } from './types/owners';
 import Feedback from './components/Feedback/Feedback';
+import PetCard from './components/PetCard/PetCard';
+import { Pet } from './types/owners';
 
+import './styles/App.css';
 import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import './styles/App.css';
 
 const App = () => {
     const { owners, error, loading } = useFetchOwners();
@@ -24,21 +25,37 @@ const App = () => {
     return (
         <Container
             maxWidth="xl"
-            style={{ paddingTop: '40px', paddingBottom: '40px' }}
+            sx={{ paddingTop: '2.5rem', paddingBottom: '2.5rem' }}
         >
-            <Grid container rowSpacing={1}>
+            <Grid container rowSpacing={1} spacing={2}>
                 <Grid size={12}>
-                    {loading ? (
-                        <Feedback type="loading">Loading...</Feedback>
-                    ) : error ? (
-                        <Feedback type="error">{error}</Feedback>
-                    ) : (
-                        <>
-                            <p>{JSON.stringify(malePetOwners)}</p>
-                            <p>{JSON.stringify(femaleOwners)}</p>
-                        </>
-                    )}
+                    <h1 style={{ fontSize: '1rem' }}>Cat Names by Gender</h1>
                 </Grid>
+                {loading ? (
+                    <Grid size={12}>
+                        <Feedback type="loading">Loading...</Feedback>
+                    </Grid>
+                ) : error ? (
+                    <Grid size={12}>
+                        <Feedback type="error">{error}</Feedback>
+                    </Grid>
+                ) : (
+                    <>
+                        <Grid size={6}>
+                            {' '}
+                            <PetCard
+                                gender="Male"
+                                pets={malePetOwners}
+                            ></PetCard>
+                        </Grid>
+                        <Grid size={6}>
+                            <PetCard
+                                gender="Female"
+                                pets={femaleOwners}
+                            ></PetCard>
+                        </Grid>
+                    </>
+                )}
             </Grid>
         </Container>
     );
