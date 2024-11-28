@@ -40,7 +40,7 @@ Github Actions, Netlify
 Clone the project or download the zip
 
 ```bash
-  git clone https://github.com/wksung/stock-dashboard.git
+  git clone https://github.com/wksung/coding-challenge-web.git
 ```
 
 Go to the project directory
