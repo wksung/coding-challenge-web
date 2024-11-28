@@ -1,4 +1,4 @@
-### Introduction
+## Introduction
 
 This is a code challenge with specific requirements which are:
  
@@ -7,7 +7,7 @@ This is a code challenge with specific requirements which are:
 3. Output must be presentable on a web browser.
 4. Submissions will only be accepted via GitHub or Bitbucket.
 
-### Tech Stack
+## Tech Stack
 
 #### Client:
 React, Typescript
@@ -24,7 +24,7 @@ Prettier, ESLint
 #### DevOps:
 Github Actions, Netlify
 
-### CI/CD Pipeline
+## CI/CD Pipeline
 
 1. Whenever a code is pushed into the main branch the GitHub Actions workflow is triggered.
 2. Within the workflow, there are a couple of things the Actions check in order for the workflow to pass, these are:
@@ -35,7 +35,7 @@ Github Actions, Netlify
 4. This is deployed but not published which means tests should be checked as each deployment generates a unique URL before publishing the work.
 5. Once everything is ticked off, deployment can be published.
 
-### Run Locally
+## Run Locally
 
 Clone the project or download the zip
 
@@ -67,6 +67,6 @@ Start the server
   npm start
 ```
 
-### Live Site
+## Live Site
 
 Or if you prefer, please visit [here](https://code-challenge-web-29112024.netlify.app) for the demo.
