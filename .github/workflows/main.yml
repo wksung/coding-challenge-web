@@ -28,4 +28,6 @@ jobs:
         run: npm run lint
 
       - name: Run Tests
+        env:
+          REACT_APP_API_URL: ${{ secrets.REACT_APP_API_URL }}
         run: npm test a -- --verbose
