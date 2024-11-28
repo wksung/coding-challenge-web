@@ -46,7 +46,7 @@ Clone the project or download the zip
 Go to the project directory
 
 ```bash
-  cd stock-dashboard
+  cd coding-challenge-web
 ```
 
 Install dependencies
