@@ -67,6 +67,22 @@ Start the server
   npm start
 ```
 
+## Run Tests Locally
+
+If you'd like to run your tests locally for both Cypress & React Testing Library:
+
+Run all react tests in RTL
+
+```bash
+  npm test a -- --verbose
+```
+
+Run all Cypress tests
+
+```bash
+  npx cypress run --component
+```
+
 ## Live Site
 
 Or if you prefer, please visit [here](https://code-challenge-web-29112024.netlify.app) for the demo.
