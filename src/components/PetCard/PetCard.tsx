@@ -5,8 +5,13 @@ import { Pet } from '../../types/owners';
 
 const PetCard = ({ gender, pets }: { gender: string; pets: Pet[] }) => {
     return (
-        <Card sx={{ padding: '1rem' }} variant="outlined">
-            <p style={{ margin: 0, fontWeight: 'bold' }}>{gender}</p>
+        <Card sx={{ padding: '1rem' }} className="PetCard" variant="outlined">
+            <p
+                className="PetCard--heading"
+                style={{ margin: 0, fontWeight: 'bold' }}
+            >
+                {gender}
+            </p>
             <Divider sx={{ paddingTop: '0.5rem' }} />
             {pets.map((pet, index) => {
                 return (
