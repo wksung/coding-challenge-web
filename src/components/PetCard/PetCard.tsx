@@ -7,6 +7,7 @@ const PetCard = ({ gender, pets }: { gender: string; pets: Pet[] }) => {
     return (
         <Card sx={{ padding: '1rem' }} className="PetCard" variant="outlined">
             <p
+                data-testid="PetCard--gender"
                 className="PetCard--heading"
                 style={{ margin: 0, fontWeight: 'bold' }}
             >
