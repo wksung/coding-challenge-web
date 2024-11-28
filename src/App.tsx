@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import getPetType from './utils/getPetType';
 import useFetchOwners from './hooks/useFetchOwners';
 import { Pet } from './types/owners';
+import Feedback from './components/Feedback/Feedback';
 
 import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid2';
@@ -28,9 +29,9 @@ const App = () => {
             <Grid container rowSpacing={1}>
                 <Grid size={12}>
                     {loading ? (
-                        <p>Loading...</p>
+                        <Feedback type="loading">Loading...</Feedback>
                     ) : error ? (
-                        <p>{error}</p>
+                        <Feedback type="error">{error}</Feedback>
                     ) : (
                         <>
                             <p>{JSON.stringify(malePetOwners)}</p>
