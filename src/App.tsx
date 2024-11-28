@@ -4,8 +4,8 @@ import useFetchOwners from './hooks/useFetchOwners';
 import Feedback from './components/Feedback/Feedback';
 import PetCard from './components/PetCard/PetCard';
 import { Pet } from './types/owners';
-
 import './styles/App.css';
+
 import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 

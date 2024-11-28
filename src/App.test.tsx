@@ -79,7 +79,7 @@ describe('App', () => {
         mockedgetOwners.mockRejectedValue(new Error('Error fetching data'));
 
         await act(async () => render(<MockApp />));
-        expect(screen.getByText(/Error fetching data.../i)).toBeInTheDocument();
+        expect(screen.getByText(/Error fetching data/i)).toBeInTheDocument();
     });
 
     it('should show up the list of male owners cats alphabetically', async () => {

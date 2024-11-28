@@ -4,7 +4,7 @@ const getPetType = (owners: Owner[], gender: string, type: string): Pet[] => {
     return owners
         .flatMap((owner) =>
             owner.pets
-                ? owner.pets?.filter(
+                ? owner.pets.filter(
                       (pet) => owner.gender === gender && pet.type === type,
                   )
                 : [],

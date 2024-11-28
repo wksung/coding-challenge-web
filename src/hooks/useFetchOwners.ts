@@ -13,7 +13,7 @@ const useFetchOwners = () => {
                 const data = await getOwners();
                 setOwners(data);
             } catch (error) {
-                setError('Error fetching data...');
+                setError('Error fetching data');
             } finally {
                 setLoading(false);
             }

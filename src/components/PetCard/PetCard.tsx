@@ -1,7 +1,8 @@
 import React from 'react';
+import { Pet } from '../../types/owners';
+
 import Card from '@mui/material/Card';
 import Divider from '@mui/material/Divider';
-import { Pet } from '../../types/owners';
 
 const PetCard = ({ gender, pets }: { gender: string; pets: Pet[] }) => {
     return (
