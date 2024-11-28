@@ -46,7 +46,7 @@ const MockData: Owner[] = [
     },
 ];
 
-describe('getPetCats', () => {
+describe('getPetType', () => {
     it('should return cats for male owners only', () => {
         const result = getPetType(MockData, 'Male', 'Cat');
         expect(result).toEqual([
