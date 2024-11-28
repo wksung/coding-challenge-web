@@ -12,3 +12,14 @@
 - Testing - RTL & Cypress
 - Tools - ESLint & Prettier
 - CI/CD - GitHub Actions & Netlify
+
+## CI/CD:
+
+1. Push to main branch.
+2. GitHub Actions -> Runs ESLint & tests.
+3. Netlify -> Deploys site to link below.
+4. Netlify -> Make sure to publish if manual testing is completed.
+
+## Live Site:
+
+Link: https://code-challenge-web-29112024.netlify.app
