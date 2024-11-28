@@ -49,9 +49,7 @@ const MockData: Owner[] = [
         ],
     },
 ];
-const mockedgetOwners = getOwners as jest.MockedFunction<
-    typeof getOwners
->;
+const mockedgetOwners = getOwners as jest.MockedFunction<typeof getOwners>;
 
 const MockApp = () => {
     return <App />;
@@ -78,9 +76,7 @@ describe('App', () => {
 
     it('should show up an error message if the API fails', async () => {
         // mock failed API
-        mockedgetOwners.mockRejectedValue(
-            new Error('Error fetching data'),
-        );
+        mockedgetOwners.mockRejectedValue(new Error('Error fetching data'));
 
         await act(async () => render(<MockApp />));
         expect(screen.getByText(/Error fetching data.../i)).toBeInTheDocument();
