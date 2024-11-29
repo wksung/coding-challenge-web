@@ -59,7 +59,7 @@ Change the .env.example file to .env and update the following
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `REACT_APP_API_URL` | `string` | **Required**. URL which was provided in the code challenge from the start to the final / |
+| `REACT_APP_API_URL` | `string` | **Required**. URL provided for this example only. |
 
 Start the server
 
