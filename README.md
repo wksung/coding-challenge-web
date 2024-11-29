@@ -27,7 +27,7 @@ Github Actions, Netlify
 ## CI/CD Pipeline
 
 1. Whenever a code is pushed into the main branch the GitHub Actions workflow is triggered.
-2. Within the workflow, there are a couple of things the Actions check in order for the workflow to pass, these are:
+2. Within the workflow, there are a couple of things the Actions check in order for it to pass, these are:
    - ESLint
    - React Testing Library
    - Cypress Component Testing
