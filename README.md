@@ -2,7 +2,7 @@
 
 This is a code challenge with specific requirements which are:
  
-1. Write some code to consume the json hosted on the above web service.
+1. Write some code to consume the json hosted on the web service.
 2. Output a list of all the cats in alphabetical order under a heading of the gender of their owner.
 3. Output must be presentable on a web browser.
 4. Submissions will only be accepted via GitHub or Bitbucket.
@@ -59,7 +59,7 @@ Change the .env.example file to .env and update the following
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `REACT_APP_API_URL` | `string` | **Required**. URL which was provided in the code challenge excluding the final / |
+| `REACT_APP_API_URL` | `string` | **Required**. URL which was provided in the code challenge from the start to the final / |
 
 Start the server
 
